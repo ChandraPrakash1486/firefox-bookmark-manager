@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bookmark Manager</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 10px;
+      }
+      button {
+        margin: 10px;
+      }
+      #bookmarkOptions {
+        display: none; /* Initially hidden */
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Bookmark Manager</h3>
+    <button id="openBookmarks">Open Bookmarks</button>
+    <div id="bookmarkOptions">
+      <button id="openToolbar">Bookmark Toolbar</button>
+      <button id="openMenu">Bookmark Menu</button>
+    </div>
+    <button id="removeBookmarks">Remove Bookmarks</button>
+    <div>
+      <label for="openAfterTime">Open After (in minutes): </label>
+      <input type="number" id="openAfterTime" min="0" placeholder="0 for immediate">
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
